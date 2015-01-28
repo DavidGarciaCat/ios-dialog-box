@@ -71,6 +71,7 @@
 							  .append( $('<div>').attr('id','iOSdialogBoxWindowButtons')
 							  					 .append(
 												 	$('<div>').attr('class','iOSdialogBoxButton')
+															  .css({'position':'absolute','left':'-20px'})
 															  .append(
 															  	$('<div>').html( opciones['button'] )
 																		  .click(function(e){
