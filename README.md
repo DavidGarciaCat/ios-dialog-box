@@ -8,7 +8,7 @@ Features
 
 Notes
 -----
-This is a Pre-Alpha project. I used before in a custom CMS Developments.  
+This is a Pre-Alpha project. I used it before, in some custom CMS Developments.  
 Use it on your own responsibility.
 
 Related Links
