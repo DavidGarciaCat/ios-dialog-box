@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>
+
+  <meta charset="UTF-8">
+
+  <title>iOS Dialog Box Samples</title>
+
+  <script src="jquery.min.js"></script>
+  <script src="iOSdialogBox.js"></script>
+  <script>
+
+    $(document).ready(function(e) {
+
+      $('#iOSdialogBoxAlert_Default').click(function(){
+        $(this).iOSdialogBoxAlert();
+      });
+
+      $('#iOSdialogBoxAlert').click(function(){
+        $(this).iOSdialogBoxAlert({
+          'title'   : 'Alerta' ,
+          'message' : 'Mensaje informativo de la alerta' ,
+          'button'  : 'Aceptar'
+        },respuesta);
+      });
+
+      $('#iOSdialogBoxConfirm_Default').click(function(){
+        $(this).iOSdialogBoxConfirm();
+      });
+
+      $('#iOSdialogBoxConfirm').click(function(){
+        $(this).iOSdialogBoxConfirm({
+          'title'   : 'Confirmación' ,
+          'message' : 'Mensaje informativo que espera confirmación' ,
+          'button1' : 'Confirmar' ,
+          'button2' : 'Cancelar'
+        },respuesta);
+      });
+
+    });
+
+    function respuesta( respuesta )
+    {
+      alert( "Callback Function. Response: " + respuesta );
+    }
+
+  </script>
+
+  <link href="iOSdialogBox.css" rel="stylesheet">
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  <p>&nbsp;</p>
+
+  <p><a id="iOSdialogBoxAlert_Default" href="javascript:;">Default iOS Alert Dialog Box</a></p>
+  <p><a id="iOSdialogBoxAlert" href="javascript:;">iOS Alert Dialog Box</a></p>
+
+  <p>&nbsp;</p>
+
+  <p><a id="iOSdialogBoxConfirm_Default" href="javascript:;">Default iOS Confirm Dialog Box</a></p>
+  <p><a id="iOSdialogBoxConfirm" href="javascript:;">iOS Confirm Dialog Box</a></p>
+
+</html>
